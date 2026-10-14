@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Component Control Panel · Personal Dashboard</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="app-title">🎛️ UI Component Control Panel</h1>
+    <p class="app-subtitle">An OOP demo of widget creation, management and interaction</p>
+    <nav class="toolbar" aria-label="Widget toolbar">
+      <button class="btn btn-primary" data-action="add" data-widget="todo" type="button"><span aria-hidden="true">✅</span> Add To-Do</button>
+      <button class="btn btn-primary" data-action="add" data-widget="quote" type="button"><span aria-hidden="true">💬</span> Add Quote</button>
+      <button class="btn btn-primary" data-action="add" data-widget="weather" type="button"><span aria-hidden="true">🌤️</span> Add Weather</button>
+      <button class="btn btn-primary" data-action="add" data-widget="cat" type="button"><span aria-hidden="true">🐱</span> Add Cat</button>
+      <button class="btn btn-ghost" data-action="clear" type="button"><span aria-hidden="true">🗑️</span> Clear All</button>
+    </nav>
+  </header>
+  <main>
+    <section id="dashboard" class="dashboard" aria-label="Widget dashboard"></section>
+    <p id="empty-hint" class="empty-hint" hidden>No widgets yet. Click a button above to add one (or press keys 1–4).</p>
+  </main>
+  <footer class="app-footer"><small>Data: Quotable · DummyJSON · Open-Meteo · TheCatAPI | Press keys 1–4 to add widgets</small></footer>
+  <script src="js/UIComponent.js"></script>
+  <script src="js/ToDoWidget.js"></script>
+  <script src="js/QuoteWidget.js"></script>
+  <script src="js/WeatherWidget.js"></script>
+  <script src="js/CatWidget.js"></script>
+  <script src="js/Dashboard.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
